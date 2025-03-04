@@ -1,13 +1,17 @@
 package com.example.complexnooperation;
 
-public class complexNo {
+public class ComplexNo {
     int real;
     int img;
 
 // constructor
-    public complexNo(int real, int img) {
+    public ComplexNo(int real, int img) {
         this.real = real;
         this.img = img;
+    }
+
+    //empty constructor
+    public ComplexNo() {
     }
 
     //getter
@@ -36,5 +40,12 @@ public class complexNo {
                 "real=" + real +
                 ", img=" + img +
                 '}';
+    }
+
+    ComplexNo add(ComplexNo c){
+        ComplexNo resultComplexNumber=new ComplexNo();
+        resultComplexNumber.real=this.real+c.real;
+        resultComplexNumber.img=this.img+c.img;
+        return resultComplexNumber;
     }
 }
