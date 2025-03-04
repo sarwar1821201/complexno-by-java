@@ -29,9 +29,22 @@ public class ComplexOperationViewController {
     @FXML
     private Button subComNoButton;
 
+    ComplexNo c1,c2,c3;
+
     @FXML
     void addComNoButtonOnAction(ActionEvent event) {
+      c1=new ComplexNo(
+              Integer.parseInt(real1stcomplexno.getText()),
+              Integer.parseInt(img1stcomplexno.getText())
+      );
+        c2=new ComplexNo(
+                Integer.parseInt(real2ndcomplexno.getText()),
+                Integer.parseInt(img2ndcomplexno.getText())
+        );
 
+        c3=c1.add(c2);
+
+        resultLabel.setText(c3.toString());
     }
 
     @FXML

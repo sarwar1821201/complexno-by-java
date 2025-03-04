@@ -36,10 +36,10 @@ public class ComplexNo {
 
     @Override
     public String toString() {
-        return "complexNo{" +
-                "real=" + real +
-                ", img=" + img +
-                '}';
+        return "complexNo :" +
+                 + real + "+" +
+                 + img +
+                'i';
     }
 
     ComplexNo add(ComplexNo c){
