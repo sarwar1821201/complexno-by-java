@@ -49,6 +49,19 @@ public class ComplexOperationViewController {
 
     @FXML
     void subComNoButtonOnAction(ActionEvent event) {
+        c1=new ComplexNo(
+                Integer.parseInt(real1stcomplexno.getText()),
+                Integer.parseInt(img1stcomplexno.getText())
+        );
+
+        c2=new ComplexNo(
+                Integer.parseInt(real2ndcomplexno.getText()),
+                Integer.parseInt(img2ndcomplexno.getText())
+        );
+
+        c3=c1.sub(c2);
+
+        resultLabel.setText(c3.toString());
 
     }
 

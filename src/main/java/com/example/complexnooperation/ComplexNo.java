@@ -48,4 +48,11 @@ public class ComplexNo {
         resultComplexNumber.img=this.img+c.img;
         return resultComplexNumber;
     }
+
+    ComplexNo sub(ComplexNo c){
+        ComplexNo resultComplexNumber=new ComplexNo();
+        resultComplexNumber.real=this.real-c.real;
+        resultComplexNumber.img=this.img-c.img;
+        return resultComplexNumber;
+    }
 }
